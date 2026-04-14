@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const members = ['Kamila', 'Enrique', 'Jorge', 'Jesus'];
+const members = ['Kamila', 'Enrique', 'Jorge', 'Jesus', 'David', 'Iván'];
 
 const TeamInfoSection = () => (
   <section className="relative w-full overflow-hidden py-10 px-[5vw]">
