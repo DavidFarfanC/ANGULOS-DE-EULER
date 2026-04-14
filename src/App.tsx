@@ -1,7 +1,7 @@
 import Hero from './sections/Hero';
 import TeamInfoSection from './sections/TeamInfoSection';
-import Intro from './sections/Intro';
 import EulerBiographySection from './sections/EulerBiographySection';
+import Intro from './sections/Intro';
 import RollPitchYaw from './sections/RollPitchYaw';
 import Visualizer from './sections/Visualizer';
 import Orden from './sections/Orden';
@@ -20,8 +20,8 @@ const App = () => (
     <FloatingQR />
     <Hero />
     <TeamInfoSection />
-    <Intro />
     <EulerBiographySection />
+    <Intro />
     <RollPitchYaw />
     <Visualizer />
     <Orden />

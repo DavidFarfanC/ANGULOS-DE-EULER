@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const QR_URL = 'https://angulos-de-euler.vercel.app/';
 
-// QR image via QR Server API — teal dots on dark background, no border
+// QR image via QR Server API — white dots on dark background
 const QR_IMAGE_SRC =
   'https://api.qrserver.com/v1/create-qr-code/' +
   '?size=200x200' +
   '&data=' + encodeURIComponent(QR_URL) +
-  '&color=5eead4' +
+  '&color=ffffff' +
   '&bgcolor=0b1220' +
   '&qzone=1' +
   '&format=svg';
