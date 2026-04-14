@@ -4,6 +4,34 @@ Una single-page experience de nivel premium construida con **React + Tailwind CS
 
 ---
 
+## Identidad académica
+
+Este proyecto fue desarrollado para la materia **Robótica Industrial** impartida por el **Prof. Rafael Miranda** en **CETYS Universidad — Campus Tijuana**.
+
+**Equipo Rojo:** Kamila · David · Ivan · Enrique · Jorge · Jesus
+
+La página incluye una sección de contexto institucional visible al inicio del recorrido, pensada para el entorno de clase.
+
+---
+
+## Acceso rápido desde móvil
+
+La página incluye un botón **QR flotante** en la esquina inferior derecha. Al pulsarlo aparece un código QR que apunta a:
+
+```
+https://angulos-de-euler.vercel.app/
+```
+
+Esto permite a los alumnos escanear y seguir la experiencia desde su teléfono durante la clase, sin necesidad de escribir la URL.
+
+---
+
+## Contexto histórico — Leonhard Euler
+
+Se añadió una sección biográfica sobre Leonhard Euler entre la introducción conceptual y la explicación técnica de los ejes Roll·Pitch·Yaw. Incluye retrato histórico, ficha de datos, mini-biografía en español con tono universitario y cita. El objetivo es contextualizar al matemático antes de profundizar en su aporte.
+
+---
+
 ## Stack
 
 | Herramienta | Versión | Rol |
@@ -52,6 +80,7 @@ src/
 │   ├── RotationComparison.tsx   # ★ Comparador interactivo: dos cubos CSS 3D, paso a paso
 │   ├── GimbalDemo.tsx           # ★ Demo SVG animado: 3 vectores → 2 vectores al bloquearse
 │   ├── MatrixDisplay.tsx        # ★ Matrices de rotación con tabs y brackets CSS elegantes
+│   ├── FloatingQR.tsx           # ★ Botón QR flotante sticky → panel expandible con QR teal
 │   │
 │   ├── GlassCard.tsx            # Card glassmorphism reutilizable
 │   ├── SectionHeading.tsx       # Encabezado de sección con eyebrow + animación viewport
@@ -62,15 +91,17 @@ src/
 │   └── ParticlesBackground.tsx  # Canvas 2D: partículas con repulsión al mouse (optimizado)
 │
 └── sections/
-    ├── Hero.tsx          # Apertura con anillos de cardán CSS 3D + partículas
-    ├── Intro.tsx         # ¿Qué son los ángulos de Euler?
-    ├── RollPitchYaw.tsx  # Cards: definición de cada eje de rotación
-    ├── Visualizer.tsx    # Visualizador 3D + ControlsPanel con presets
-    ├── Orden.tsx         # Comparación interactiva de secuencias de rotación
-    ├── Aplicaciones.tsx  # Drones / Satélites / Robótica / IMU con datos técnicos
-    ├── Matematicas.tsx   # Matrices de rotación con tabs interactivos
-    ├── Gimbal.tsx        # Demo de gimbal lock con SVG animado
-    └── Cierre.tsx        # Síntesis: intuitivos · poderosos · limitados
+    ├── Hero.tsx                 # Apertura con anillos de cardán CSS 3D + partículas
+    ├── TeamInfoSection.tsx      # ★ Identidad académica: CETYS / materia / equipo
+    ├── Intro.tsx                # ¿Qué son los ángulos de Euler?
+    ├── EulerBiographySection.tsx # ★ Biografía de Euler: imagen + texto + cita
+    ├── RollPitchYaw.tsx         # Cards: definición de cada eje de rotación
+    ├── Visualizer.tsx           # Visualizador 3D + ControlsPanel con presets
+    ├── Orden.tsx                # Comparación interactiva de secuencias de rotación
+    ├── Aplicaciones.tsx         # Drones / Satélites / Robótica / IMU con datos técnicos
+    ├── Matematicas.tsx          # Matrices de rotación con tabs interactivos
+    ├── Gimbal.tsx               # Demo de gimbal lock con SVG animado
+    └── Cierre.tsx               # Síntesis: intuitivos · poderosos · limitados
 ```
 
 ---

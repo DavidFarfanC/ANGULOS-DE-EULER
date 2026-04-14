@@ -2,6 +2,24 @@
 
 ---
 
+## [2.1.0] — 2026-04-14 — Identidad Académica + Biografía + QR
+
+### Added
+
+- **`TeamInfoSection`** (`src/sections/TeamInfoSection.tsx`): sección institucional elegante insertada entre Hero e Intro. Muestra CETYS Universidad / Campus Tijuana, Materia (Robótica Industrial), Profesor (Rafael Miranda) y los integrantes del Equipo Rojo (Kamila, David, Ivan, Enrique, Jorge, Jesus) como chips tipográficos. Layout de tres columnas con separadores y jerarquía visual clara. Integrada con glassmorphism y el lenguaje de colores del sitio.
+
+- **`EulerBiographySection`** (`src/sections/EulerBiographySection.tsx`): sección biográfica de Leonhard Euler insertada entre Intro y RollPitchYaw. Layout de dos columnas — imagen histórica a la izquierda (Cloudinary), texto a la derecha con tres párrafos en español de tono universitario, ficha rápida (nacimiento / fallecimiento / campo), y cita atribuida. Trata la imagen con gradiente, glow teal y overlay suave para integrarla al estilo oscuro del sitio.
+
+- **`FloatingQR`** (`src/components/FloatingQR.tsx`): botón flotante sticky en esquina inferior derecha que al pulsarse expande un panel con QR en tonos teal sobre fondo ink. El QR apunta a `https://angulos-de-euler.vercel.app/` y se genera vía QR Server API con colores del sistema de diseño. Incluye animación de apertura/cierre con Framer Motion AnimatePresence. En mobile permanece compacto para no tapar contenido.
+
+### UX
+
+- El flujo narrativo queda: Hero → Identidad Académica → Concepto → Euler → Roll·Pitch·Yaw → ... — el contexto institucional y el personaje histórico se presentan antes del contenido técnico.
+- El QR permite a alumnos en clase escanear y seguir la experiencia desde su dispositivo móvil sin escribir la URL.
+- Todos los nuevos componentes respetan prefers-reduced-motion y son totalmente responsive.
+
+---
+
 ## [2.0.0] — 2026-04-13 — Iteración Premium
 
 ### Added — Nuevos componentes
